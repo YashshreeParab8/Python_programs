@@ -185,15 +185,40 @@
 #   Yellow -> "Get Ready"
 #   Green -> "Go"  Handle invalid colors
 
-color = input("Enter a color:").lower()
-if color == 'red':
-    print("Stop")
+#color = input("Enter a color:").lower()
+#if color == 'red':
+#    print("Stop")
 
-elif color == 'yellow':
-    print("Get ready")
+#elif color == 'yellow':
+#    print("Get ready")
 
-elif color == 'green':
-    print("Go")
+#elif color == 'green':
+#    print("Go")
 
-else:
-    print("Invalid color")
+#else:
+#    print("Invalid color")
+
+#Q2 ATM Menus
+balance = 10000
+print("1 - Check balance\n2 - Deposit\n3 - Withdraw\n4 - Exit\n")
+n = int(input("Enter your choice:"))
+match n:
+    case 1:
+        print("Your account balance is:",balance)
+
+    case 2:
+        deposit = int(input(print("Enter the amount you want to deposit:")))
+        balance = balance + deposit
+        print("Deposit done, your balance is:",balance)
+
+    case 3: 
+        withdraw = int(input("Enter the amount you want to withdraw:"))
+        if withdraw > balance :
+            print("Insufficient Balance")
+
+        else :
+            balance = balance - withdraw
+            print("Withdraw done, your balance is:",balance)
+
+    case _:
+        print("Invalid Choice")
