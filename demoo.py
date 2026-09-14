@@ -220,5 +220,8 @@ match n:
             balance = balance - withdraw
             print("Withdraw done, your balance is:",balance)
 
+    case 4:
+        print("Thankyou for using this ATM")
+
     case _:
         print("Invalid Choice")
