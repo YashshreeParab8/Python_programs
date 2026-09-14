@@ -199,29 +199,52 @@
 #    print("Invalid color")
 
 #Q2 ATM Menus
-balance = 10000
-print("1 - Check balance\n2 - Deposit\n3 - Withdraw\n4 - Exit\n")
-n = int(input("Enter your choice:"))
-match n:
-    case 1:
-        print("Your account balance is:",balance)
+#balance = 10000
+#print("1 - Check balance\n2 - Deposit\n3 - Withdraw\n4 - Exit\n")
+#n = int(input("Enter your choice:"))
+#match n:
+#    case 1:
+#        print("Your account balance is:",balance)
 
-    case 2:
-        deposit = int(input(print("Enter the amount you want to deposit:")))
-        balance = balance + deposit
-        print("Deposit done, your balance is:",balance)
+#    case 2:
+#        deposit = int(input(print("Enter the amount you want to deposit:")))
+#        balance = balance + deposit
+#        print("Deposit done, your balance is:",balance)
+#
+#    case 3: 
+#        withdraw = int(input("Enter the amount you want to withdraw:"))
+#        if withdraw > balance :
+#            print("Insufficient Balance")
+#
+#        else :
+#            balance = balance - withdraw
+#            print("Withdraw done, your balance is:",balance)
+#
+#    case 4:
+#        print("Thankyou for using this ATM")
 
-    case 3: 
-        withdraw = int(input("Enter the amount you want to withdraw:"))
-        if withdraw > balance :
-            print("Insufficient Balance")
+#    case _:
+#        print("Invalid Choice")
 
-        else :
-            balance = balance - withdraw
-            print("Withdraw done, your balance is:",balance)
 
-    case 4:
-        print("Thankyou for using this ATM")
+#Q3 Rock paper scissors
+player1 = input("Player 1 - Enter rock, paper or scissors: ").lower()
+player2 = input("Player 2 - Enter rock, paper or scissors: ").lower()
 
-    case _:
-        print("Invalid Choice")
+if player1 == player2:
+    print("It's a tie!")
+
+elif player1 == "rock" and player2 == "scissors":
+    print("Player 1 wins!")
+
+elif player1 == "paper" and player2 == "rock":
+    print("Player 1 wins!")
+
+elif player1 == "scissors" and player2 == "paper":
+    print("Player 1 wins!")
+
+elif player1 in ["rock", "paper", "scissors"] and player2 in ["rock", "paper", "scissors"]:
+    print("Player 2 wins!")
+
+else:
+    print("Invalid choice")
