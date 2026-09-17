@@ -3,12 +3,7 @@
 #c1 = a1 + b1
 #print(c1)
 
-a = input("Enter your number:")
-b = 20
-c = a + b
-print(c)
-
-#ncsjk
-
-
-##ygjhkjl;
+#a = input("Enter your number:")
+#b = 20
+#c = a + b
+#print(c)
