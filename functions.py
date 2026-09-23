@@ -81,9 +81,9 @@
 # add = lambda a,b: a+b
 # print(add(2,3))
 
-def fun(n):
-    if n==0:
-        return
-    fun(n-1)
-    print(n)
-fun(3)
+# def fun(n):
+#     if n==0:
+#         return
+#     fun(n-1)
+#     print(n)
+# fun(3)
